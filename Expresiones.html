@@ -4,13 +4,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Validacion con expresion regular</title>
+        <title>Validacion de expresiones regulares</title>
         <script type="text/javascript">
-            function Validacion() 
+            function validar() 
             {
                 var n = document.getElementById("number").value;
-                var expreg = /^(?!0+.00)(?=.{1,9}(.|$))(?!0(?!.))\d{1,3}(,\d{3})*(.\d+)?$/;
-                if(expreg.test(n))
+                var er = /^(?!0+.00)(?=.{1,9}(.|$))(?!0(?!.))\d{1,3}(,\d{3})*(.\d+)?$/;
+                if(er.test(n))
                     alert("Expresion correcta");
                 else
                  alert("Expresion no correcta");
@@ -25,7 +25,7 @@
                 Numero: <input type="text" id="number" />
                 <br />
                 <br />
-                <input type="button" value="Validacion" onclick="Validacion()" />
+                <input type="button" value="Validacion" onclick="Validar()" />
 
             </p>
         </form>
